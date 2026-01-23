@@ -39,7 +39,7 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 1.2 }}
         className="mt-12 text-body-sm tracking-[0.3em]"
       >
-        2025
+        2026
       </motion.p>
 
       {/* Scroll indicator */}

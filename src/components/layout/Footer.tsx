@@ -112,7 +112,7 @@ export default function Footer() {
       <div className="border-t border-white/10 px-6 md:px-12 py-6">
         <div className="max-w-[1800px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <span className="text-body-sm tracking-[0.2em] opacity-50 uppercase">
-            © 2025 NARCOTIC
+            © 2026 NARCOTIC
           </span>
           <div className="flex gap-8">
             <a
