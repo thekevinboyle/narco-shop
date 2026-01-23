@@ -1,6 +1,6 @@
 import { createClient, SanityClient } from "@sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
-import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
+import type { SanityImage } from "./types";
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "production";
@@ -17,7 +17,7 @@ export const client: SanityClient | null = projectId
 
 const builder = client ? imageUrlBuilder(client) : null;
 
-export function urlFor(source: SanityImageSource) {
+export function urlFor(source: SanityImage) {
   if (!builder) {
     throw new Error("Sanity client not configured");
   }
