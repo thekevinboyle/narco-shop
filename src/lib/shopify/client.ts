@@ -5,7 +5,11 @@ const storefrontAccessToken =
 const endpoint = domain ? `https://${domain}/api/2024-01/graphql.json` : null;
 
 export function isShopifyConfigured(): boolean {
-  return !!(domain && storefrontAccessToken);
+  if (!domain || !storefrontAccessToken) return false;
+  // Detect placeholder values
+  if (domain.includes('your-store') || domain.includes('your_store')) return false;
+  if (storefrontAccessToken.includes('your_token') || storefrontAccessToken === 'your_token') return false;
+  return true;
 }
 
 export async function shopifyFetch<T>({
