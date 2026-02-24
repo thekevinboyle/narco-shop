@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { type ReactNode } from "react";
 
-const ease = [0.25, 0.46, 0.45, 0.94];
+const ease = [0.25, 0.46, 0.45, 0.94] as [number, number, number, number];
 
 export function FadeIn({
   children,
