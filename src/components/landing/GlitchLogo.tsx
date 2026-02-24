@@ -17,6 +17,8 @@ export default function GlitchLogo() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="w-full h-auto"
+        role="img"
+        aria-label="NARCOTIC"
       >
         <path d={LOGO_PATH} fill={fill} />
       </svg>
