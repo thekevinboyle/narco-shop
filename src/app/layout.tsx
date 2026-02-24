@@ -36,6 +36,9 @@ export const metadata: Metadata = {
   description:
     "Roasted By Nameless Folk. Consumed By Many. Featuring Seasonal Offerings And One-Off Collabs.",
   keywords: ["coffee", "specialty coffee", "roasters", "seasonal", "collab"],
+  icons: {
+    icon: "/favicon.png",
+  },
   openGraph: {
     title: "NARCOTIC | Self Destructing Specialty Coffee",
     description: "Roasted By Nameless Folk. Consumed By Many.",
