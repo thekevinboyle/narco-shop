@@ -36,6 +36,7 @@ export const metadata: Metadata = {
   description:
     "Roasted By Nameless Folk. Consumed By Many. Featuring Seasonal Offerings And One-Off Collabs.",
   keywords: ["coffee", "specialty coffee", "roasters", "seasonal", "collab"],
+  robots: "noindex, nofollow",
   icons: {
     icon: "/favicon.png",
   },
